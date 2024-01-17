@@ -26,7 +26,6 @@ function CountryData({data}) {
 
     useEffect(() => {
       const changeWidth = () => {
-        console.log(width);
         setWidth(window.innerWidth)
       }
 
