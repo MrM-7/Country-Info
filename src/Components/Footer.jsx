@@ -7,7 +7,7 @@ function Footer() {
   return (
     <>
         <footer className="bg-gray-800 text-white text-center mt-6 py-4">
-            <div className="flex justify-center items-center">
+            <div className="lg:flex lg:justify-center lg:items-center ">
                 <p className="text-lg">© 2024 Mehul Raj Minya</p>
                 <span className="text-gray-400 mx-2">|</span>
                 <a

@@ -52,33 +52,33 @@ function CountryData({data}) {
           (width <= 1023) ? (
                   <>
                     <div className="flex w-full flex-col border-gradient-green-yellow border-b-2 items-center pb-3 mb-10">
-                      <h1 className="m-1 text-green-500 text-4xl mb-4">Country</h1>
-                      <h1 className="text-yellow-500 m-1 text-3xl">{data.name?.common}</h1>
+                      <h1 className="m-1 text-green-500 text-2xl mb-4">Country</h1>
+                      <h1 className="text-yellow-500 m-1 text-2xl">{data.name?.common}</h1>
                     </div>
 
                     <div className="flex w-full flex-col border-gradient-green-yellow border-b-2 items-center pb-3 mb-10">
-                      <h1 className="m-1 text-green-500 text-4xl mb-4">Capital</h1>
-                      <h1 className="text-yellow-500 m-1 text-3xl">{data.capital[0]}</h1>
+                      <h1 className="m-1 text-green-500 text-2xl mb-4">Capital</h1>
+                      <h1 className="text-yellow-500 m-1 text-2xl">{data.capital[0]}</h1>
                     </div>
 
                     <div className="flex w-full flex-col border-gradient-green-yellow border-b-2 items-center pb-3 mb-10">
-                      <h1 className="m-1 text-green-500 text-4xl mb-4">Region</h1>
-                      <h1 className="text-yellow-500 m-1 text-3xl">{data.region}</h1>
+                      <h1 className="m-1 text-green-500 text-2xl mb-4">Region</h1>
+                      <h1 className="text-yellow-500 m-1 text-2xl">{data.region}</h1>
                     </div>
 
                     <div className="flex w-full flex-col border-gradient-green-yellow border-b-2 items-center pb-3 mb-10">
-                      <h1 className="m-1 text-green-500 text-4xl mb-4">Subregion</h1>
-                      <h1 className="text-yellow-500 m-1 text-3xl">{data.subregion}</h1>
+                      <h1 className="m-1 text-green-500 text-2xl mb-4">Subregion</h1>
+                      <h1 className="text-yellow-500 m-1 text-2xl">{data.subregion}</h1>
                     </div>
 
                     <div className="flex w-full flex-col border-gradient-green-yellow border-b-2 items-center pb-3 mb-10">
-                      <h1 className="m-1 text-green-500 text-4xl mb-4">Population</h1>
-                      <h1 className="text-yellow-500 m-1 text-3xl">{convertPopulation(data.population)}</h1>
+                      <h1 className="m-1 text-green-500 text-2xl mb-4">Population</h1>
+                      <h1 className="text-yellow-500 m-1 text-2xl">{convertPopulation(data.population)}</h1>
                     </div>
 
                     <div className="flex w-full flex-col  items-center pb-3 mb-10">
-                      <h1 className="m-1 text-green-500 text-4xl mb-4">Currency</h1>
-                      <h1 className="text-yellow-500 m-1 text-3xl">{data.currencies[Object.keys(data.currencies)[0]].name} {'('} {data.currencies[Object.keys(data.currencies)[0]].symbol} {')'}</h1>
+                      <h1 className="m-1 text-green-500 text-2xl mb-4">Currency</h1>
+                      <h1 className="text-yellow-500 m-1 text-2xl">{data.currencies[Object.keys(data.currencies)[0]].name} {'('} {data.currencies[Object.keys(data.currencies)[0]].symbol} {')'}</h1>
                     </div>
                   </>
           ) : (
