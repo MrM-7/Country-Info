@@ -8,18 +8,19 @@ function App() {
   const [country, setCountry] = useState('India');
   const [newCountry, setNewCountry] = useState('');
   const [isLoading, setIsLoading] = useState(true);
+  const [alert, setAlert] = useState(false)
 
 
   const {data, newData} = useCountryData(country)
   
 
   const changeCountry = () => {
-    if (newCountry === '') {
-      alert('Enter Country Name!!');
-      return;
+    if (newCountry.trim() === '') {
+      setAlert(true)
+      return
     }
 
-    setCountry(newCountry);
+    setCountry(newCountry.trim());
     setIsLoading(true);
 
     setTimeout(() => {
@@ -47,13 +48,13 @@ function App() {
   return (
     <>
       <div className="w-full min-h-screen bg-gray-900 font-cool">
-        <div className="flex flex-col flex-wrap gap-6 items-center ">
-          <InputData newCountry={newCountry} setNewCountry={setNewCountry} changeCountry={changeCountry}/>
+        <div className="flex flex-col flex-wrap gap-6 items-center mt-0">
+          <InputData newCountry={newCountry} setNewCountry={setNewCountry} changeCountry={changeCountry} alert={alert} setAlert={setAlert}/>
 
           {isLoading ? (
             <div className="animate-spin rounded-full border-t-4 border-gray-300 border-solid h-16 w-16"></div>
           ) : data && errorFree(data) && <CountryData data={data[0]}/>
-          || <h1 className='text-red-500 text-2xl'>Incorrect Country Name</h1> }
+          || <h1 className='text-red-500 text-2xl'>Please enter a valid country name</h1> }
         </div>
 
         <Footer />
