@@ -8,16 +8,9 @@ function InputData({newCountry, setNewCountry, changeCountry, alert, setAlert}) 
 
   const input = useRef(null)
 
-  if(alert && input.current){
-    input.current.style.outlineColor = 'red'
-    input.current.style.outlineWidth = '5px'
-
-    setTimeout(() => {
-      input.current.style.outlineColor = 'none'
-      input.current.style.outlineWidth = '0'
-      
-      setAlert(false)
-    }, 2000);
+  if(alert){
+    input.current.focus()
+    setAlert(false)
   }
 
   return (
@@ -31,7 +24,6 @@ function InputData({newCountry, setNewCountry, changeCountry, alert, setAlert}) 
             className="p-2 outline-none capitalize rounded-md text-blue-500
             focus:outline-blue-500 transition-all duration-150 ease-in
             text-xl"
-            style={alert ? {outlineColor: "red", outlineWidth: "2px"} : {}}
             onChange={(e) => setNewCountry(e.target.value)}
             ref={input}
             placeholder="E.g., United States"
