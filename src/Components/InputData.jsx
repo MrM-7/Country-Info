@@ -23,7 +23,7 @@ function InputData({newCountry, setNewCountry, changeCountry, alert, setAlert}) 
             value={newCountry}
             className="p-2 outline-none capitalize rounded-md text-blue-500
             focus:outline-blue-500 transition-all duration-150 ease-in
-            text-xl"
+            text-xl sm:w-1/2"
             onChange={(e) => setNewCountry(e.target.value)}
             ref={input}
             placeholder="E.g., United States"
