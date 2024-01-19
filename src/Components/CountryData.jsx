@@ -88,7 +88,7 @@ function CountryData({data}) {
 
                     <div className="flex w-full flex-col border-gradient-green-yellow border-2 items-center pb-3 mb-10">
                       <h1 className="m-1 text-green-500 text-2xl mb-4">Languages</h1>
-                      <h1 className="text-yellow-500 m-1 text-xl">
+                      <h1 className="text-yellow-500 m-1 text-xl text-center">
                         {
                           getLanguages(data.languages).map((language, index, array) => (
                             <span key={index}>{language}{(index + 1 < array.length)? ", " : ""}</span>
