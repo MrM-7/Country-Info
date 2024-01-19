@@ -16,7 +16,7 @@ function InputData({newCountry, setNewCountry, changeCountry, alert, setAlert}) 
   return (
     <>
       <h1 className="lg:text-3xl text-gray-300 mt-20 
-         lg:mt-12 
+         lg:mt-12 sm:text-2xl
       ">Enter Country Name</h1>
           <input
             type="text"
@@ -30,7 +30,7 @@ function InputData({newCountry, setNewCountry, changeCountry, alert, setAlert}) 
           />
           <button
             className=" text-gray-300 border-2 rounded-md px-3 py-2 hover:bg-gray-300 hover:text-black transition-all duration-500
-            lg:text-xl lg:mb-5 sm:text-sm"
+            lg:text-xl lg:mb-5 sm:text-lg"
             onClick={changeCountry}
           >
             Search
