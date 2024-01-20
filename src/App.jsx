@@ -61,7 +61,7 @@ function App() {
             {isLoading ? (
               <div className="animate-spin rounded-full border-t-4 border-gray-300 border-solid h-16 w-16"></div>
             ) : data && errorFree(data) && <CountryData data={data[0]}/>
-            || <h1 className='text-red-500 text-2xl'>Please enter a valid country name</h1> }
+            || <h1 className='text-red-500 text-2xl text-center'>Please enter a valid country name</h1> }
           </div>
 
           <Footer />
