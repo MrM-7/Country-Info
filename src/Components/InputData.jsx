@@ -17,7 +17,7 @@ function InputData({newCountry, setNewCountry, changeCountry, alert, setAlert}) 
 
   return (
     <>
-      <h1 className={`lg:text-3xl ${theme === "dark" ? "text-gray-300" : "text-gray-700"}  sm:text-2xl font-bold
+      <h1 className={`lg:text-3xl ${theme === "dark" ? "text-gray-300" : "text-gray-700"}  sm:text-2xl 
       `}>Enter Country Name</h1>
           <input
             type="text"
