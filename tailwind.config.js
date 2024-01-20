@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        hunterGreen: '#31572C',
+        tyrianPurple: '#4C0827'
+      },
       fontFamily: {
         cool: ['Montserrat']
       }
