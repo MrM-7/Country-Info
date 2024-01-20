@@ -13,7 +13,7 @@ function App() {
   const [newCountry, setNewCountry] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [alert, setAlert] = useState(false)
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
 
   const {data, newData} = useCountryData(country)
